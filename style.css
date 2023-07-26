@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to bottom, rgb(227, 233, 227), rgb(164, 168, 164));
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-logo {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    max-height: 80px;
+}
+
+/* BEGIN - INICIAL COM FORMULÁRIO */
+.begin {
+    background-image: url(./images/vista-hotel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.formulario {
+    padding: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+.container-form {
+    align-items: center;
+    max-width: 400px;
+    background-color: white;
+    opacity: 0.93;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container-form h1 {
+    font-size: 18px;
+    padding: 20px 50px;
+    text-align: center;
+    line-height: 120%;
+    background-color: #f5f0f0;
+}
+
+.container-form p {
+    font-size: 16px;
+    padding: 0 30px;
+    margin-bottom: 2px;
+}
+
+.container-form input {
+    width: 85%;
+    font-size: 14px;
+    margin-left: 30px;
+    padding: 8px 5px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.container-form .botao {
+    width: 85%;
+    font-size: 14px;
+    margin-left: 30px;
+    padding: 8px 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: blue;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+}
+
+/* INTRO */
+.intro {
+    padding: 40px 30px;
+    text-align: center;
+    background-color: rgb(220, 222, 243);
+}
+
+.intro h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.intro p {
+    font-size: 13px;
+    padding: 15px 50px;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+/* CÔMODOS */
+.comodos {
+    background-color: rgb(221, 243, 220);
+}
+
+.comodos-single {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.comodos-single img {
+    margin: 10px;
+    max-width: calc(900px*0.8);
+    max-height: calc(506px*0.8);
+}
+
+.comodos-single h3 {
+    padding: 0 30px 0 30px;
+    text-align: center;
+    line-height: 130%;
+    font-weight: normal;
+}
+
+.comodos-single:nth-child(2n-1) {
+    flex-direction: row;
+}
+
+/* END - FINALIZAÇÃO DA CHAMADA */
+.end {
+    padding: 40px 30px;
+    text-align: center;
+    background-color: rgb(220, 222, 243);
+}
+
+.end h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.end p {
+    font-size: 13px;
+    padding: 15px 50px;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+footer {
+    padding: 30px 30px;
+    text-align: center;
+    background-color: rgb(221, 243, 220);
+}
+
+footer p {
+    font-size: 13px;
+    padding: 3px 50px;
+    text-transform: uppercase;
+}
+
+footer img {
+    padding-top: 10px;
+    width: 15%;
+}
+
+@media screen and (max-width: 860px) {
+
+    /* HEADER */
+    .menu-logo {
+        padding: 0 30px;
+    }
+
+    .logo img {
+        max-width: 90px;
+        max-height: 48px;
+    }
+
+    /* BEGIN - INICIAL COM FORMULÁRIO */
+    .formulario {
+        padding: 30px;
+    }
+
+    .container-form h1 {
+        font-size: 14px;
+        padding: 20px 30px;
+    }
+
+    .container-form p {
+        font-size: 12px;
+        padding: 0 20px;
+    }
+
+    .container-form input {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
+    .container-form .botao {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
+    /* INTRO */
+    .intro h1 {
+        font-size: 20px;
+    }
+
+    .intro p {
+        font-size: 13px;
+    }
+
+    /* CÔMODOS */
+    .comodos-single {
+        display: block;
+        text-align: center;
+    }
+
+    .comodos-single img {
+        margin: 10px;
+        max-width: 95%;
+        padding: 0 2px;
+    }
+
+    .comodos-single h3 {
+        font-size: 15px;
+    }
+
+    /* END - FINALIZAÇÃO DA CHAMADA */
+    .end h1 {
+        font-size: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer p {
+        padding: 3px 35px;
+    }
+
+}
